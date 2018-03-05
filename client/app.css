@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+h1{
+  font-size: 48px;
+  font-weight: 300;
+}
+
+h2{
+  font-size: 22px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+h3{
+  font-size: 22px;
+  font-weight: 300;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+p {
+  margin: 0;
+  padding: 16px 0;
+}
+
+h1 span
+{
+    display: block;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 0px 150px 0px 150px;
+  padding: 0;
+}
+
+#section-c .box {
+  padding: 32px;
+  color: #000;
+}
+
+#section-c .box:first-child {
+  background: #fff;
+}
+
+.content-title{
+  position: relative;
+  left: 150px;
+  top: -10px;
+  text-align: left;
+}
+
+.content-list{
+  margin: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: left;
+}
+
+.content-list-title{
+  cursor:pointer;
+}
+.content-list-title2{
+  position: relative;
+  text-align: right;
+  text-transform: uppercase;
+  bottom: 50px;
+  right: 120px;
+}
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #d3d3d3;
+  text-align: left;
+  right: 200px;
+
+
+}
+.square > .day{
+  text-align: center;
+  font-size: 54px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+}
+
+.square > .month{
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content-list-body{
+  position: relative;
+  text-align: left;
+  bottom: 60px;
+  padding-right: 150px;
+  text-overflow: ellipsis;
+  max-width: 130ch;
+}
+
+.select-container{
+    position: relative;
+    bottom: 96px;
+}
+
+.select-style {
+    position: absolute;
+    right: 200px;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.styled-select select {
+  position: absolute;
+  right: 200px;
+  background-size: 30px 30px;
+  background-position: right;
+  border: 1px solid #ccc;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+
+.btn {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+@media only screen and  (max-width: 1200px) and (min-width: 769px)  {
+  .content-title{
+    left: 50px;
+    top: -10px;
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  .content-list {
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .square {
+      right: 50px;
+  }
+
+  .select-container{
+      bottom: 80px;
+  }
+  .styled-select select {
+    right: 100px;
+  }
+}
+
+@media only screen and  (max-width: 768px) and (min-width: 600px)  {
+  .content-title{
+    left: -10px;
+    top: -10px;
+    font-size: 26px;
+    font-weight: 300;
+  }
+  .content-list-body{
+    font-size: 14px;
+  }
+  .content-list {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .square {
+    right: 20px;
+  }
+
+  .select-container{
+    bottom: 60px;
+  }
+  .styled-select select {
+    right: -5px;
+  }
+  .content-list-title2{
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+    bottom: 55px;
+    right: 90px;
+  }
+  .content-list-title > h2 {
+    font-size: 18px!important;
+  }
+  .content-list-title2 > h2 {
+    font-size: 16px!important;
+  }
+}
+
+
+@media only screen and  (max-width: 600px) and (min-width: 320px)  {
+
+  .content-title{
+    position: relative;
+    top: -40px;
+    text-align: center;
+    left: 0px !important;
+  }
+  .select-container {
+      bottom: 65px;
+  }
+  .styled-select select {
+    right: 0px!important;
+  }
+  .styled-select select{
+    width: 100%;
+  }
+  .square{
+    display: none;
+  }
+  hr{
+    margin: auto;
+  }
+  .content-list {
+      margin: 0px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+  }
+  .content-list-title2 {
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    bottom: 35px;
+    right: 0;
+  }
+  .content-list-body {
+    position: relative;
+    text-align: left;
+    bottom: 40px;
+    padding-right: 0;
+  }
+
+}
